@@ -36,6 +36,6 @@ s
 * Analytics to track progress and impact
 
 * Inform program design/interventions and policy decisions
-
+<!-- 
 ## System Architecture
-![Propa Data System Design](images/system-design.png)
+![Propa Data System Design](images/system-design.png) -->

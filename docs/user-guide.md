@@ -15,7 +15,7 @@ The Propa Data system includes the following key modules:
 s
 * *Learning Hub*: Access curated articles, tips, and training resources  to support business growth
 
-![Propa Data System Design](images/system-design.png)
+<!-- ![Propa Data System Design](images/system-design.png) -->
 
 ## User Login & Registration
 
