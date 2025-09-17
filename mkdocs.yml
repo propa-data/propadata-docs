@@ -4,6 +4,7 @@ nav:
   - Home: index.md
   - User Guide: user-guide.md
   - Enumerators Guide: enumerators.md
+  - Propa Data Management : management.md
   - About: about.md
 
 theme:

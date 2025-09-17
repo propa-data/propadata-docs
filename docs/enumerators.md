@@ -14,14 +14,18 @@ Before you start always remember to:
 ## Download & Install the App
 
 You will first download the app from **Google Play Store** the **DHIS2 Data Capture App**.  
- [Click here to download if not installed yet](https://play.google.com/store/apps/details?id=org.hisp.dhis.android.datacapture).  
+ [Click here to download if not installed yet](https://play.google.com/store/search?q=dhis2%20capture&c=apps).  
 
 With this app, you’ll be able to **onboard traders into the system**.
 
 ## Login
 - Open the Data Capture App.  
-- Enter your **Username**, **Password** and the **Server URL** as provided.
-- Tap **Login** to access the system.  
+- Enter your **Username** & **Password** as provided then paste the url as below:
+- **Server URL**:
+```bash
+ https://fishtrader.exhaustivesoln.com/propa-data
+```
+- Then tap the **Login** button to access the system.
 
 ![dHIS2 CAPTURE APP LOGIN PAGE  FOR ENUMERATORS](images/image15.png)
 
