@@ -127,16 +127,21 @@ Indicators are **custom calculations** created from data elements, attributes, o
 They turn raw data into **meaningful measures** for monitoring and reporting.  
 
 #### Creating an Indicator
-1. Open the **Maintenance App** → *Indicators*.  
-2. Click **+ Add New** and provide:  
+**1.** Open the **Maintenance App** → *Indicators*.  
+**2.** Click **+ Add New** and provide:  
    - **Name** → e.g., *Digital Skills Completion Rate*  
    - **Short Name** → used in charts/tables  
    - **Description** → purpose of the indicator  
-3. Build the **Formula**:  
+
+   ![indicators creation](images/image121.png)
+**3.** Build the **Formula**:  
    - **Numerator** → participants who completed training  
    - **Denominator** → Total enrolled participants  
-4. (Optional) Add it to an **Indicator Group** for easy categorization.  
-5. Save and test it in the **Data Visualizer** app.  
+
+   ![indicators creation](images/image122.png)
+
+**4.** (Optional) Add it to an **Indicator Group** for easy categorization.  
+**5.** Save and test it in the **Data Visualizer** app.  
 
 ## Data Entry App / Aggregate Reporting
 
