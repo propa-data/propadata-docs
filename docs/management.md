@@ -1,8 +1,8 @@
 
 # What is Propa Data Management App
 
-The **Propa Data Management App** is a platform built on **DHIS2**, designed to help organizations collect, manage, and analyze data related to fish traders.  
-It provides tools for **data entry, validation, visualization, and reporting**, supporting both **individual trader-level records** and **aggregate data** at higher administrative levels.
+The **Propa Data Management App** is a platform built on **DHIS2**, designed to help organizations collect, manage, and analyze data related to participants.  
+It provides tools for **data entry, validation, visualization, and reporting**, supporting both **individual participant-level records** and **aggregate data** at higher administrative levels.
 
 ## Propa Data Management App
 
@@ -14,7 +14,7 @@ Access the platform here  [Propa Data Platform](https://fishtrader.exhaustivesol
 
 ### Dashboards
 
-Once logged in, you will see **custom dashboards** that summarize key indicators, trader activities, and survey results.  
+Once logged in, you will see **custom dashboards** that summarize key indicators, participant activities, and survey results.  
 These dashboards provide quick insights for monitoring and decision making.
 
 ![Dashboards](images/image41.png)
@@ -26,12 +26,79 @@ You can access these apps from the **App Menu** (grid icon at the top right corn
 
 Examples include:  
 - **Data Entry App**: For entering aggregate data.  
-- **Capture App**: For registering traders and recording events.  
+- **Capture App**: For registering Participants and recording events.  
+- **User Management App**: For user management and adding new  users.  
+- **Maintenance App**: For configuring metadata such as programs, data elements, indicators, and organisation units.  
 - **Event Reports & Data Visualizer**: For analyzing and visualizing data.  
 - **Dashboard App**: For quick access to key performance metrics.  
-- **PropaData Notifications App**: For creating and dispersing notifications.  
+- **PropaData Notifications App**: For creating and sending notifications to users.  
 
 ![App Highlights](images/image42.png)
+
+## User Management App
+
+The **User Management App** is where administrators manage access to the Propa Data platform.  
+From here, you can create users, assign roles, and group users for easier management.
+
+![User Management](images/image101.png)  
+
+### Adding a New User
+**1.** Open the **User Management App**.  
+**2.** Click on the **+Add** button.  
+**3.** Fill in the required fields such as: 
+
+* **Username**  
+* **Full Name**  
+* **Password**  
+
+- **E-mail / Phone number** 
+
+- **Expiration Date** - For short term platform users
+
+![Adding new user](images/image102.png)  
+
+**4.** Assign the user to an **Organisation Unit** 
+**5.** Assign **User Roles** based on responsibilities.  
+
+![Adding new user](images/image103.png)  
+
+**6.** Review the details and click **Create User**.  
+
+![Assign user roles](images/image104.png)  
+
+### Creating a User Role
+
+User Roles define what apps and functionalities a user can access.  
+
+**1.** In the **User Management App**, go to **User Roles**.  
+**2.** Click **Create Role**.  
+**3.** Enter:  
+   - **Role Name** (e.g., Enumerator Role).  
+   - **Description**.  
+
+   ![Creating user role](images/image105.png)  
+
+**4.** Assign **App Authorities**:  
+   - For enumerators, select **Capture App access only**.  
+   - For program officers, include **Data Visualizer, Event Reports, and Dashboards**. 
+
+   ![Assigning authorities](images/image106.png)  
+ 
+**5.** Save the role.  
+
+### Creating a User Group
+
+User Groups are useful for managing users collectively (Enumerators).  
+
+1. In the **User Management App**, go to **User Groups**.  
+2. Click **Create User Group**.  
+3. Enter a **Group Name** (Enumerators).  
+4. Search and add users to the group.  
+5. Save the group.  
+
+![Creating user group](images/image107.png)
+
+- This makes it easier to assign permissions, share dashboards, or send notifications to multiple users at once.  
 
 ## Maintenance App
 
@@ -44,7 +111,7 @@ Here you can define **data elements, attributes, indicators and option sets** th
 Data elements are the **basic units of information** collected in the system (e.g., *Trader Age*, *Training Completed*, *Business Type*).  
 They are the raw data fields used in forms, programs, and indicators.  
 
-- **Example:** *Traders with registered businesses*.  
+- **Example:** *participants with registered businesses*.  
 
 ![maintenance app](images/image50.png)
 
@@ -66,19 +133,19 @@ They turn raw data into **meaningful measures** for monitoring and reporting.
    - **Short Name** → used in charts/tables  
    - **Description** → purpose of the indicator  
 3. Build the **Formula**:  
-   - **Numerator** → Traders who completed training  
-   - **Denominator** → Total enrolled traders  
+   - **Numerator** → participants who completed training  
+   - **Denominator** → Total enrolled participants  
 4. (Optional) Add it to an **Indicator Group** for easy categorization.  
 5. Save and test it in the **Data Visualizer** app.  
 
-## Data Entry App
+## Data Entry App / Aggregate Reporting
 
 The **Data Entry app** in Propa Data is used to capture **aggregate information**.  
 Aggregate data refers to information collected at a **group level** (i.e, ward, sub-county, county) rather than for a single individual.  
 
 Typical aggregate entries in Propa Data include:
 
-- Number of **traders registered** in a given period.  
+- Number of **participants registered** in a given period.  
 - Number of **surveys completed** by in a certain ward.  
 - Counts of **activities** (trainings, market visits, outreach events).  
 
@@ -116,7 +183,7 @@ Propa Data uses a **hierarchical organisational structure**, so all data must be
   - Use **Save** if you’re still working on the form.  
   - Use **Complete** when all data is filled in correctly. Completed forms lock the period for that dataset.  
 
-## Capture App
+## Data Capture App / Longitudinal Reporting
 
 The **Capture app** in Propa Data is used to register **events** — activities or records that happen at a specific **time** and **place**.  
 Unlike routine aggregate data (collected at regular intervals), events are logged as they occur, and each event can carry detailed information.  
@@ -125,19 +192,19 @@ Unlike routine aggregate data (collected at regular intervals), events are logge
 
 - Events are tied to a **program**.  
 - In this case, Propa Data uses the **Fish Trader Program**.  
-- Traders are treated as **tracked entities**, meaning:  
-  - You can **search existing traders** using attributes such as **phone number, names or trader ID**.  
-  - You can also **register new traders** into the program if they don’t already exist.  
+- participants are treated as **tracked entities**, meaning:  
+  - You can **search existing participants** using attributes such as **phone number, names or trader ID**.  
+  - You can also **register new participants** into the program if they don’t already exist.  
 - Each event is linked to a **date** and **organisation unit** (e.g., your assigned ward).  
 
 ![Capture app](images/image44.png)
 
 ### Typical Uses of the Capture App
 
-- **Registering new traders** into the Fish Trader Program.  
+- **Registering new participants** into the Fish Trader Program.  
 - **Onboarding assessments** (e.g., digital skills survey).  
 - **Recording trader activities** such as training sessions, market attendance, or extension visits.  
-- **Longitudinal follow-up** of traders across multiple events (e.g., training → survey → progress checks).  
+- **Longitudinal follow-up** of participants across multiple events (e.g., training → survey → progress checks).  
 
 
 ## Data Visualizer
@@ -179,9 +246,107 @@ Follow these steps to create your own visualizations:
 
 
 ### Example Output
-Here is a **pie chart** showing **male vs. female traders** who have completed the **Digital Skills Assessment**.  
+Here is a **pie chart** showing **male vs. female participants** who have completed the **Digital Skills Assessment**.  
 
 ![Pie Chart Example](images/image48.png)
 
 You can also **download or share** your charts directly from the visualizer.  
+
+## PropaData Notifications
+
+The **PropaData Notifications App** allows you to create, schedule, and track notifications across different channels (SMS, Email, and In-App).
+
+![Propa Data Notifications](images/image108.png)
+
+### Notification Analytics
+
+The **Analytics Dashboard** provides an overview of all notifications sent. It displays:
+
+- **Total Notifications Sent**  
+- **Successful Deliveries**  
+- **Failed Deliveries**  
+- **Total Recipients**  
+
+![Notification Analytics](images/image-101.png)
+
+##### Individual Notification Analytics
+
+You can view detailed analytics for each notification by clicking the **eye icon**.
+
+![Individual Notification](images/image109.png)
+
+This displays key details such as:
+
+- Title  
+- Status  
+- Created By  
+- Type  
+- Message Body  
+- Scheduled Time / Sent Time  
+
+![Notification Details](images/image110.png)
+
+The analytics also show a **delivery breakdown** by channel (SMS, Email, In-App).
+
+![Delivery Breakdown](images/image111.png)
+
+### Creating Notifications
+
+To create a new notification, click **+ Schedule Notification** button.
+
+![Schedule Notification](images/image112.png)
+
+#### Step 1: Add Notification Details
+**Title** – Enter a descriptive title.  
+**Message** – Write your message. You can insert **dynamic templates** such as:  
+  - First Name  
+  - Full Name  
+  - Gender  
+  - Phone Number  
+
+![Notification Message](images/image113.png)
+
+#### Step 2: Define Notification Settings
+
+- **Type** – Select the notification type.  
+- **Delivery Mode** – Choose **Email, SMS, or In-App**.  
+- **Target Audience** – Define recipients.  
+- **Send Timing** – Send immediately (default: scheduled after 5 minutes) or schedule for a later date/time.  
+
+![Notification Settings](images/image114.png)
+
+For scheduled notifications, simply pick your preferred date and time.
+
+![Scheduled Notification](images/image115.png)
+
+Once created, the notification will appear in the list with the status **Scheduled** until it is sent.
+
+![Notification Status](images/image116.png)
+
+### Notification Audience
+The target audience for various notifications
+
+![Notification Audience](images/image117.png)
+
+#### Adding a New Audience
+
+When creating an audience, ensure recipients have valid **Email** or **Phone Numbers** (for SMS notifications).
+
+![Add Audience](images/image118.png)
+
+You can select participants directly and apply filters for easier participants filtering and add them to the audience.
+
+![Select Participants](images/image119.png)
+
+After confirming the details, click **Confirm Selection**.  
+
+A confirmation will appear if the audience is valid.
+
+![Audience Created](images/image120.png)
+
+
+✅ With these steps, you can manage notifications, monitor delivery performance, and ensure effective communication with participants.
+
+
+
 
