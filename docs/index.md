@@ -1,41 +1,68 @@
-# Propa Data System
+# PropaData System Documentation
 
-Propa Data is a digital platform designed to streamline participant management, data collection, and program delivery. It helps organizations improve efficiency, accuracy, and decision-making through real-time data capture and reporting.
-
-The Propa Data system includes the following key modules:
-
-* *User Login & Registration*: Easy self-registration and user login, with guided profile setup.
-
-* *Activity Reporting*: Users can submit regular updates on trading and business activities.
-
-* *Profile Management*: Manage and update business information and documents
-
-* *Notifications & Updates*: Receive real-time alerts and program updates
-s
-* *Learning Hub*: Access curated articles, tips, and training resources  to support business growth
-
-![dashboard](images/image-7.png)
-
+## Overview
+PropaData is a comprehensive digital platform designed to streamline participant management, data collection, and program delivery for organizations working in Africa's fisheries sector.
 
 ## Purpose
-* Empower women and youth in Africa’s fisheries sector.
-
-* Support inclusive economic growth through data-driven insights
-
-* Improve service delivery and decision-making across the program and sector
+- Empower women and youth in Africa's fisheries sector
+- Support inclusive economic growth through data-driven insights
+- Improve service delivery and decision-making
+- Modernize fisheries sector management
 
 ## Core Functions
-* Centralized data collection and management
+- Centralized data collection and management
+- Near real-time monitoring and evaluation
+- Unique participant registration
+- Digital record management
+- Advanced analytics and impact tracking
+- Data-driven program design
 
-* Near real-time monitoring and evaluation
+## Target Outcomes
+**-** **242,573 dignified jobs**
 
-* Unique participants registration.
+- 150,000 via self-employment
+- 92,573 via wage employment
 
-* Digital record management
+**-** **175,000** jobs targeted for young women out of the **242,573** jobs.
 
-* Analytics to track progress and impact
+**-** **$100M increase** in trade volume of fish and fish products
 
-* Inform program design/interventions and policy decisions
-<!-- 
-## System Architecture
-![Propa Data System Design](images/system-design.png) -->
+## PropaData Applications
+
+### PropaData Client App
+_It enables users to self-register, report business activities, manage their profiles, receive updates, and access a learning hub with curated content, all from their mobile devices._
+
+**Features:**
+
+- Participant Registration & Onboarding
+- Activity Reporting
+- Profile Management
+- Notifications & Updates
+- Learning Hub
+
+### PropaData Enumerator App
+_The Enumerator App is for implementing partners to support participants who may not self-register. It facilitates structured data collection, onboarding, and performance monitoring at the field level._
+
+**Features:**
+
+- Participant Registration & Onboarding
+- Activity Data Collection
+- Performance Tracking
+- Secure, role-based access
+- Offline syncing capability
+
+### PropaData Management Platform
+_Central management system_
+
+
+**Features:**
+
+- Unified Stakeholder Access
+- Partner-Level Access & Data Attribution
+- High-Level Analytical Dashboards
+- Custom Performance Tracking
+- Advanced Analytics & GIS
+- Participant Data Management
+- Configurable Tools & Indicators
+- RESTful API Integration
+

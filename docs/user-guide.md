@@ -5,15 +5,15 @@ The platform also supports **language translation to Kiswahili** for wider acces
 
 The Propa Data system includes the following key modules:
 
-* *User Login & Registration*: Easy self-registration and user login, with guided profile setup.
+* **User Login & Registration/ Onboarding**: Easy self-registration and user login, with guided profile setup.
 
-* *Activity Reporting*: Users can submit regular updates on trading and business activities.
+* **Activity Reporting**: Users can submit regular updates on trading and business activities.
 
-* *Profile Management*: Manage and update business information and documents
+* **Profile Management**: Manage and update business information and documents
 
-* *Notifications & Updates*: Receive real-time alerts and program updates
+* **Notifications & Updates**: Receive real-time alerts and program updates
 s
-* *Learning Hub*: Access curated articles, tips, and training resources  to support business growth
+* **Learning Hub**: Access curated articles, tips, and training resources  to support business growth
 
 <!-- ![Propa Data System Design](images/system-design.png) -->
 
@@ -91,9 +91,9 @@ The first step is to select your **primary organisation unit (ward)** by followi
 
 ![ward level](images/image-4.png)
 
-Once you have selected your ward, you can continue with the Trader profile setup.
+Once you have selected your ward, you can continue with the Participant profile setup.
 
-### Trader Profile Setup
+### Participant Profile Setup
 Before you can start using the system, you need to complete your profile setup.  
 
 1. Fill in **all required fields** marked with a red asterisk (*).  
@@ -128,7 +128,7 @@ On the Dashboard, you can:
 
 ## Surveys & Programs
 
-**Program** – A program is a structured set of activities or services designed to achieve a specific goal. In Propa Data, programs may include training, awareness campaigns, or community projects that traders or participants can join and track.  
+**Program** – A program is a structured set of activities or services designed to achieve a specific goal. In Propa Data, programs may include training, awareness campaigns, or community projects that participants can join and track.  
 
 **Survey** – A survey is a set of questions or assessments used to collect information from participants. In Propa Data, surveys help gather feedback, monitor progress, and evaluate the results of programs and activities.  
 
