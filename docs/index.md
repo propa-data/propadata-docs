@@ -30,7 +30,7 @@ PropaData is a comprehensive digital platform designed to streamline participant
 ## PropaData Applications
 
 ### PropaData Client App
-_It enables users to self-register, report business activities, manage their profiles, receive updates, and access a learning hub with curated content, all from their mobile devices._
+_It is a mobile application that enables users to self-register, report business activities, manage their profiles, receive updates, and access a learning hub with curated content, all from their mobile devices._
 
 **Features:**
 
@@ -41,7 +41,7 @@ _It enables users to self-register, report business activities, manage their pro
 - Learning Hub
 
 ### PropaData Enumerator App
-_The Enumerator App is for implementing partners to support participants who may not self-register. It facilitates structured data collection, onboarding, and performance monitoring at the field level._
+_The Enumerator App is a mobile application for implementing partners to support participants who may not self-register. It facilitates structured data collection, onboarding, and performance monitoring at the field level._
 
 **Features:**
 
@@ -52,7 +52,7 @@ _The Enumerator App is for implementing partners to support participants who may
 - Offline syncing capability
 
 ### PropaData Management Platform
-_Central management system_
+_The **PropaData Management Platform** is  a secure, role-based web platform providing unified access for partners and stakeholders. It features high-level analytical dashboards,comprehensive participants data management and data analysis, partner reporting, notifications management, and spatial data mapping and analysis._
 
 
 **Features:**

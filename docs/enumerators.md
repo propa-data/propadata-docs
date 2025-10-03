@@ -1,4 +1,5 @@
 # Enumerator App Guide
+_The Enumerator App is a mobile application for implementing partners to support participants who may not self-register. It facilitates structured data collection, onboarding, and performance monitoring at the field level._
 
 The Enumerator App (DHIS2 Data Capture) is used by field officers to onboard participants into the system, capture assessments, and sync data with the central Propa Data server. 
  

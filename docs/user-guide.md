@@ -1,6 +1,6 @@
 # Introduction to Propa Data
 
-**Propa Data** is a digital platform designed to streamline participant management, data collection, and program delivery and it helps organizations improve efficiency, accuracy, and decision-making through real-time data capture and reporting.  
+**Propa Data Client App** is a digital platform designed to streamline participant management, data collection, and program delivery and it helps organizations improve efficiency, accuracy, and decision-making through real-time data capture and reporting.  
 The platform also supports **language translation to Kiswahili** for wider accessibility.  
 
 The Propa Data system includes the following key modules:

@@ -7,7 +7,7 @@
 
 #### What is PropaData Platform?
 
-The **PropaData Management Platform** is a platform built on **DHIS2**, designed to support data management, streamline participant management, data collection, and program delivery around the fisheries sector.
+The **PropaData Management Platform** is  a secure, role-based web platform providing unified access for partners and stakeholders. It features high-level analytical dashboards,comprehensive participants data management and data analysis, partner reporting, notifications management, and spatial data mapping and analysis.
 
 
 #### Purpose and Scope of the Platform
@@ -62,6 +62,7 @@ Examples include:
 - **User Management App**: For user management and adding new  users.  
 - **Maintenance App**: For configuring metadata such as programs, data elements, indicators, and organisation units.  
 - **Event Reports & Data Visualizer**: For analyzing and visualizing data.  
+- **Line Listing**: For analyzing and visualizing detailed records from tracker programs or event programs.  
 - **Dashboard App**: For quick access to key performance metrics.  
 - **PropaData Notifications App**: For creating and sending notifications to users.  
 
