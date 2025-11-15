@@ -2,7 +2,7 @@ site_name: PropaData Platform Docs
 site_url: https://fish-trader-app.web.app/
 nav:
   - Home: index.md
-  - PropaData Client App: user-guide.md
+  - PropaData Client App: participants.md
   - PropaData Enumerator App: enumerators.md
   - PropaData Management Platform: management.md
 

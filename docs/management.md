@@ -33,7 +33,7 @@ The **PropaData Management Platform** is  a secure, role-based web platform prov
 
 
 ### Access and Navigation
-Access the platform from here in your preferred browser: [PropaData Platform](https://fishtrader.exhaustivesoln.com/propa-data/dhis-web-login/)
+Access the platform from here in your preferred browser: [PropaData Platform](https://portal.propadata.net/propadata)
 
 #### Login Access
 Insert your login credentials:

@@ -25,7 +25,7 @@ You can create a Propa Data account in two ways:
 * Sign up with email 
 * Sign up with Google account 
 
-Access the web application from [https://fish-trader-app.web.app](https://fish-trader-app.web.app)
+Access the web application from [https://app.propadata.net/](https://app.propadata.net/)
 
 
 ### **Email Registration**
