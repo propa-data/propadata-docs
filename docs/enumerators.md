@@ -37,7 +37,7 @@ Click the download button to install if not installed yet, [Download](https://pl
 - Enter your **Username** & **Password** then paste the **Server URL** as below:
 - **Server URL**:
 ```bash
- https://fishtrader.exhaustivesoln.com/propa-data
+ https://portal.propadata.net/propadata
 ```
 - Then tap the **Login** button to access the system.
 
