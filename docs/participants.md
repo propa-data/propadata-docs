@@ -25,7 +25,7 @@ You can create a Propa Data account in two ways:
 * Sign up with email 
 * Sign up with Google account 
 
-Access the web application from [https://app.propadata.net/](https://app.propadata.net/)
+Access the web application from: <b>[app.propadata.net/](https://app.propadata.net/) </b>
 
 
 ### **Email Registration**

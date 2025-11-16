@@ -33,7 +33,7 @@ The **PropaData Management Platform** is  a secure, role-based web platform prov
 
 
 ### Access and Navigation
-Access the platform from here in your preferred browser: [PropaData Platform](https://portal.propadata.net/propadata)
+Access the platform from here in your preferred browser: <b>[portal.propadata.net/propadata](https://portal.propadata.net/propadata) </b>
 
 #### Login Access
 Insert your login credentials:
