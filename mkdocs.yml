@@ -1,5 +1,6 @@
 site_name: PropaData Platform Docs
-site_url: https://fish-trader-app.web.app/
+site_url: https://docs.propadata.net/
+custom_domain: docs.propadata.net
 nav:
   - Home: index.md
   - PropaData Client App: participants.md
