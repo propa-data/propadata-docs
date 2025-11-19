@@ -36,9 +36,11 @@ Click the download button to install if not installed yet, [Download](https://pl
 - Open the Data Capture App.  
 - Enter your **Username** & **Password** then paste the **Server URL** as below:
 - **Server URL**:
+
 ```bash
  https://portal.propadata.net/propadata
 ```
+
 - Then tap the **Login** button to access the system.
 
 ![dHIS2 CAPTURE APP LOGIN PAGE  FOR ENUMERATORS](images/image15.png)
