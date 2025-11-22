@@ -30,7 +30,7 @@ The Enumerators App includes the following key modules:
 ## Download & Install the Data Capture App
 
 You will first download the app from **Google Play Store** the **DHIS2 Data Capture App**.  
-Click the download button to install if not installed yet, [Download](https://play.google.com/store/search?q=dhis2%20capture&c=apps).
+Click the download button to install if not installed yet, [Download](https://github.com/propa-data/Propadata-Core/releases/download/v3.2.1.2/dhis2-v3.2.1.2.apk).
 
 ## Login
 - Open the Data Capture App.  
@@ -44,7 +44,6 @@ Click the download button to install if not installed yet, [Download](https://pl
 - Then tap the **Login** button to access the system.
 
 ![dHIS2 CAPTURE APP LOGIN PAGE  FOR ENUMERATORS](images/image15.png)
-
 
 - Upon successful login, you'll access the Home Dashboard featuring all available programs and surveys.
 
