@@ -1,0 +1,1257 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.propadata.net/enumerators/">
+      
+      
+        <link rel="prev" href="../participants/">
+      
+      
+        <link rel="next" href="../management/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>PropaData Enumerator App - PropaData Platform Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="lime">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#enumerator-app-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="PropaData Platform Docs" class="md-header__button md-logo" aria-label="PropaData Platform Docs" data-md-component="logo">
+      
+  <img src="../images/propaData-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PropaData Platform Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PropaData Enumerator App
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../participants/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PropaData Client App
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PropaData Enumerator App
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../management/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PropaData Management Platform
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../images" class="md-tabs__link">
+        
+  
+  
+    
+  
+  None
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../CNAME" class="md-tabs__link">
+        
+  
+  
+    
+  
+  None
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="PropaData Platform Docs" class="md-nav__button md-logo" aria-label="PropaData Platform Docs" data-md-component="logo">
+      
+  <img src="../images/propaData-logo.png" alt="logo">
+
+    </a>
+    PropaData Platform Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../participants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PropaData Client App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PropaData Enumerator App
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PropaData Enumerator App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-install-the-data-capture-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download &amp; Install the Data Capture App
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Login
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#participant-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Participant Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Participant Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-a-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Searching for a Participant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Searching for a Participant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#existing-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Existing Participant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-existing-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Existing Participant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#onboarding-a-new-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Onboarding A New participant
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Onboarding A New participant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#select-organisation-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Select Organisation Unit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-participant-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Participant Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preview-traders-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preview Traders Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addind-a-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Addind A Note
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survey-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Survey Enrollment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Survey Enrollment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completing-a-survey-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Completing a Survey Form
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Completing a Survey Form">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saving-survey-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving Survey Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-notes-to-surveys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Notes to Surveys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-pin-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set PIN Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sync Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sync Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reserved-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reserved Values
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Sync
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manual Sync">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#successful-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Successful sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sync Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PropaData Management Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../images" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CNAME" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    None
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="enumerator-app-guide">Enumerator App Guide</h1>
+<p><em>The Enumerator App is a mobile application for implementing partners to support participants who may not self-register. It facilitates structured data collection, onboarding, and performance monitoring at the field level.</em></p>
+<p>The Enumerator App (DHIS2 Data Capture) is used by field officers to onboard participants into the system, capture assessments, and sync data with the central Propa Data server. </p>
+<p>This guide explains how enumerators can <strong>Log in</strong>, <strong>Register Participants</strong> and  Submit  participants survey data.</p>
+<p>The Enumerators App includes the following key modules:</p>
+<ul>
+<li>
+<p><strong>Participant Registration &amp; Onboarding</strong>: Implementing partners register and onboard participants onsite.</p>
+</li>
+<li>
+<p><strong>Activity Data Collection</strong>: Field staff capture real-time participant activity data including business profiles, market interactions, and product details.</p>
+</li>
+<li>
+<p><strong>Performance Tracking</strong>: Enables entry and monitoring of program targets, output metrics, and performance indicators.</p>
+</li>
+<li>
+<p><strong>Secure access</strong>: Secure and role-based authorized access</p>
+</li>
+<li>
+<p>Also ensures <strong>data consistency</strong> and supports <strong>offline syncing</strong></p>
+</li>
+</ul>
+<blockquote>
+<p>NOTE:</p>
+<p>For Enumerators they are required to:</p>
+</blockquote>
+<ul>
+<li><strong>Sync data</strong> at the beginning and end of each day in a place with a stable internet connection.  </li>
+<li><strong>Always Search</strong> participants first before adding/registering new participants to avoid duplicates.  </li>
+<li><strong>Complete all forms</strong> before submitting.  </li>
+<li><strong>Keep your device charged</strong> while in the field.  </li>
+<li><strong>Report any issue immediately</strong> if you experience  <strong>system errors</strong> during onboarding or syncing </li>
+</ul>
+<h2 id="download-install-the-data-capture-app">Download &amp; Install the Data Capture App</h2>
+<p>You will first download the app from <strong>Google Play Store</strong> the <strong>DHIS2 Data Capture App</strong>.<br />
+Click the download button to install if not installed yet, <a href="https://github.com/propa-data/Propadata-Core/releases/download/v3.2.1.2/dhis2-v3.2.1.2.apk">Download</a>.</p>
+<h2 id="login">Login</h2>
+<ul>
+<li>Open the Data Capture App.  </li>
+<li>Enter your <strong>Username</strong> &amp; <strong>Password</strong> then paste the <strong>Server URL</strong> as below:</li>
+<li><strong>Server URL</strong>:</li>
+</ul>
+<pre><code class="language-bash"> https://portal.propadata.net/propadata
+</code></pre>
+<ul>
+<li>Then tap the <strong>Login</strong> button to access the system.</li>
+</ul>
+<p><img alt="dHIS2 CAPTURE APP LOGIN PAGE  FOR ENUMERATORS" src="../images/image15.png" /></p>
+<ul>
+<li>Upon successful login, you'll access the Home Dashboard featuring all available programs and surveys.</li>
+</ul>
+<p><img alt="Landing Home Page" src="../images/image61.png" /></p>
+<h2 id="participant-management">Participant Management</h2>
+<h3 id="searching-for-a-participant">Searching for a Participant</h3>
+<ul>
+<li>Select the relevant <strong>program or survey</strong> as directed.  </li>
+<li>
+<p>In this demo, we will use the <strong>PropaData Integrated Questionnaire</strong> program</p>
+</li>
+<li>
+<p>Enter a search attribute such as:  </p>
+</li>
+<li>
+<p><strong>Phone Number</strong>  </p>
+</li>
+<li><strong>First or Last Name</strong>  </li>
+<li>
+<p><strong>Participant ID</strong>  </p>
+</li>
+<li>
+<p>Then click the <strong>Search</strong> button at the bottom of the page to view search results.</p>
+</li>
+</ul>
+<p><img alt="Search attributes" src="../images/image81.png" /></p>
+<h4 id="existing-participant">Existing Participant</h4>
+<p>If the participant exists in the selected program, their <strong>full profile details</strong> will be displayed.<br />
+For example, the screenshot below shows an existing self-registered user:</p>
+<p><img alt="Existing participant" src="../images/image18.png" /></p>
+<h4 id="non-existing-participant">Non-Existing Participant</h4>
+<ul>
+<li>If the participant is <strong>not found</strong> within the selected program, expand the search to cover the <strong>entire platform</strong> by clicking on the <strong>Search outside this program</strong> button.  </li>
+</ul>
+<p><img alt="Search outside program" src="../images/image82.png" /></p>
+<ul>
+<li>If the partcicipant still is not yet registered in other programs, tap the <strong>+ New Trader</strong> button to register/onboard  them.  </li>
+</ul>
+<p><img alt="Register new participant" src="../images/image83.png" /></p>
+<h3 id="onboarding-a-new-participant">Onboarding A New participant</h3>
+<h4 id="select-organisation-unit">Select Organisation Unit</h4>
+<p>Each participant must be linked to their ward.  </p>
+<ul>
+<li>Search by <strong>Ward</strong>.  </li>
+<li>Select the correct location.  </li>
+<li>Tap <strong>Done</strong> to confirm.  </li>
+</ul>
+<p><img alt="org unit search by ward" src="../images/image84.png" /></p>
+<h4 id="adding-participant-attributes">Adding Participant Attributes</h4>
+<p>After selecting the participants Organisation unit you will be directed to the participants registration form which you'll add now the participant details.</p>
+<ul>
+<li>Fill in all <strong>mandatory fields</strong> (marked with an asterisk *).  </li>
+<li>A <strong>Participant ID</strong> will be generated automatically.  </li>
+</ul>
+<p><img alt="participant attributes" src="../images/image85.png" /></p>
+<p>After completing to fill the form click on the save icon which is on the bottom right of the page with a blue background to save the participant details.</p>
+<p><img alt="participant attributes" src="../images/image86.png" /></p>
+<h4 id="preview-traders-form">Preview Traders Form</h4>
+<p><img alt="preview participant attributes" src="../images/image87.png" /></p>
+<h4 id="addind-a-note">Addind A Note</h4>
+<p>One can add simple notes from the notes section.</p>
+<p><img alt="adding a note" src="../images/image88.png" /></p>
+<h2 id="survey-enrollment">Survey Enrollment</h2>
+<p>After onboarding a participant, the available surveys which they can participate in will be listed. Select the appropriate survey to begin.  </p>
+<ul>
+<li>
+<p>In this demo, we’ll use the <strong>PropaData Integrated Questionnaire</strong> survey as an example.</p>
+</li>
+<li>
+<p>Click on the <strong>Enter Activity</strong>  to open the enrollment form.</p>
+</li>
+</ul>
+<p><img alt="survey enrollment" src="../images/image89.png" /></p>
+<h3 id="completing-a-survey-form">Completing a Survey Form</h3>
+<ul>
+<li>Start by selecting the <strong>Enrollment Date</strong> and <strong>Assessment Date</strong>.  </li>
+<li>Then proceed to enter the required survey fields according to your data collection protocol.  </li>
+</ul>
+<p><img alt="survey enrollment" src="../images/image90.png" /></p>
+<h4 id="saving-survey-details">Saving Survey Details</h4>
+<ul>
+<li>Once the form is filled in, click the blue <strong>Save</strong> icon at the bottom right of the page.  </li>
+</ul>
+<p><img alt="survey enrollment" src="../images/image91.png" /></p>
+<p>You’ll then have the option to:<br />
+   - <strong>Complete</strong> – Save and mark the survey as finished.<br />
+   - <strong>Not Now</strong> – Save the survey as a draft for review or completion later.  </p>
+<p><img alt="survey enrollment" src="../images/image92.png" /></p>
+<h4 id="adding-notes-to-surveys">Adding Notes to Surveys</h4>
+<ul>
+<li>
+<p>During data collection, you can attach notes for additional clarity.  </p>
+</li>
+<li>
+<p>To add a note, click on the <strong>Notes</strong> button to open the notes page.  </p>
+</li>
+</ul>
+<p><img alt="adding notes" src="../images/image32.png" /></p>
+<ul>
+<li>Tap <strong>+</strong> button to add your note.</li>
+<li>Type your note and save.  </li>
+<li>Review any previously saved notes linked to the same survey.  </li>
+</ul>
+<p><img alt="adding notes" src="../images/image33.png" /></p>
+<h2 id="settings">Settings</h2>
+<ul>
+<li>From the home page, click on the navigation bar <strong>(menu icon)</strong> to navigate to the navbar section.</li>
+</ul>
+<p><img alt="Navbar" src="../images/image62.png" /></p>
+<blockquote>
+<p>🔑 <strong>Important:</strong> <strong>Do not</strong> tamper or tap on the settings, apart from the one's highlighted below and how to go about them.</p>
+</blockquote>
+<h3 id="set-pin-code">Set PIN Code</h3>
+<p>From the Side Navbar section click on the Set Pin with a <strong>(Padlock icon)</strong> where you'll be prompted to set a <strong>4-digit PIN</strong> of your liking but <strong>Secure</strong> for faster login access.</p>
+<blockquote>
+<p>📝 <strong>NOTE:</strong> After setting the pin you'll be logged out of that section and you'll be prompted to insert the <strong>New Pin</strong> which you have set to have access to the system again.</p>
+</blockquote>
+<p><img alt="Set Pin" src="../images/image63.png" /></p>
+<h3 id="sync-data">Sync Data</h3>
+<ul>
+<li>Go to: <strong>Settings</strong> then click on the <strong>Sync data</strong>   which is on the first row of the different settings.</li>
+<li>Enable: <strong>Sync Data Now</strong> if you have a strong stable internet connection but when under internet connection the sync happens automatically after every one hour.</li>
+<li>After the sync the <strong>Last sync on</strong> will update to the current time you have done the sync</li>
+</ul>
+<p><img alt="Sync Data Settings" src="../images/image64.png" /></p>
+<h3 id="sync-configuration">Sync Configuration</h3>
+<ul>
+<li>Still on the <strong>Settings</strong>  click on the <strong>Sync Configuration</strong>   which is on the second row of the settings.</li>
+<li>Enable: <strong>Sync Configuration Now</strong> if you have a strong stable internet connection but when under internet connection the settings auto update automatically after one day.</li>
+</ul>
+<p><img alt="Sync Configuration Settings" src="../images/image65.png" /></p>
+<h3 id="reserved-values">Reserved Values</h3>
+<p>Reserved values allow enumerators to register participants and collect data <strong>offline</strong>, by using pre-downloaded unique identifiers.</p>
+<ul>
+<li>Go to: <strong>Settings → Reserved Values</strong>  </li>
+</ul>
+<p><img alt="Reserved Values" src="../images/image66.png" /></p>
+<ul>
+<li>
+<p>Click on the <strong>Manage Reserved Values</strong> .  </p>
+</li>
+<li>
+<p>From there you will be directed to another page indicating how many reserved values you have left, in this case it will be <strong>100</strong> then click on <strong>REFILL</strong> to have the reserved the values.</p>
+</li>
+</ul>
+<p><img alt="Refill Reserved Values" src="../images/image67.png" /></p>
+<h3 id="manual-sync">Manual Sync</h3>
+<p>For the <strong>Sync Data</strong> you can also do it from the Homepage section by clicking on the <strong>Sync Icon</strong> (top-right corner)</p>
+<p><img alt="Sync Data Icon" src="../images/image70.png" />  </p>
+<ul>
+<li>
+<p>You should always <strong>Manually Sync</strong> before starting field work and after finishing the day under a stable internet connection.</p>
+</li>
+<li>
+<p>This will update participant records and submit any unsynced data.  </p>
+</li>
+</ul>
+<h4 id="successful-sync">Successful sync</h4>
+<ul>
+<li>After a successful sync a green notification will be displayed with sync successfull.</li>
+</ul>
+<p><img alt="Sync Data" src="../images/image68.png" />  </p>
+<h4 id="sync-error">Sync Error</h4>
+<ul>
+<li>Incase the sync fails the app will highlight the specific issue why the the sync has failed. But incase it still fails after making changes contact the administrators for more assistance.</li>
+</ul>
+<p><img alt="Sync error" src="../images/image71.png" /></p>
+<!-- - You can also highlight 
+![Search params](images/image69.png) -->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../participants/" class="md-footer__link md-footer__link--prev" aria-label="Previous: PropaData Client App">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                PropaData Client App
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../management/" class="md-footer__link md-footer__link--next" aria-label="Next: PropaData Management Platform">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                PropaData Management Platform
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:info@propadata.net" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+    
+      
+    
+    
+      
+    
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.footer"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
