@@ -3,21 +3,26 @@
     <url>
          <loc>https://docs.propadata.net/</loc>
          <lastmod>2025-11-22</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.propadata.net/about/</loc>
          <lastmod>2025-11-22</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.propadata.net/enumerators/</loc>
          <lastmod>2025-11-22</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.propadata.net/management/</loc>
          <lastmod>2025-11-22</lastmod>
+         <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.propadata.net/participants/</loc>
          <lastmod>2025-11-22</lastmod>
+         <changefreq>daily</changefreq>
     </url>
 </urlset>
